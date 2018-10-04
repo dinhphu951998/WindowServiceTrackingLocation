@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Device.Location;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
+using System.Net.NetworkInformation;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,8 +18,13 @@ namespace WindowsServiceTrackingLocation
 {
     public partial class WindowServiceTrackingLocation : ServiceBase
     {
-        private Timer timer = null;
+        private Timer timerSendingMail = null;
+        private Timer timerCheckingInternetConnection = null;
         private Utilities utils = new Utilities();
+        private bool isCallingAPI = false;
+        private bool lastStateConnection = false;
+        private const int INTERVAL_TIMER_INTERNET_CONNECTION = 2 * 60 * 1000;
+        private const int INTERVAL_TIMER_SENDING_MAIL = 15 * 60 * 1000;
 
         public WindowServiceTrackingLocation()
         {
@@ -35,22 +42,56 @@ namespace WindowsServiceTrackingLocation
         {
             utils.Log("-------------------Stop---------------");
             utils.SendingMailUsingMailKit();
-            timer.Stop();
-            timer.Dispose();
+            ReleaseResource();
+        }
+
+        void ReleaseResource()
+        {
+            timerSendingMail.Stop();
+            timerSendingMail.Dispose();
+            timerCheckingInternetConnection.Stop();
+            timerCheckingInternetConnection.Dispose();
+            this.Dispose();
+            this.Stop();
+        }
+
+        void SetUpTimerCheckInternetConnection()
+        {
+            timerCheckingInternetConnection = new Timer(INTERVAL_TIMER_INTERNET_CONNECTION);
+            timerCheckingInternetConnection.Elapsed += OnTimerElapsedCheckingInternetConnection;
+            timerCheckingInternetConnection.Enabled = true;
+        }
+
+        void OnTimerElapsedCheckingInternetConnection(object sender, ElapsedEventArgs e)
+        {
+            if (!lastStateConnection)
+            {
+                bool result = CheckInternetConnection();
+                if (result)
+                {
+                    lastStateConnection = result;
+                    utils.SendingMailUsingMailKit();
+                }
+            }
+            else
+            {
+                lastStateConnection = CheckInternetConnection();
+            }
         }
 
         void SetUpTimerMailProcess()
         {
-            timer = new Timer()
+            timerSendingMail = new Timer()
             {
-                Interval = 5 * 60 * 1000,
+                Interval = INTERVAL_TIMER_SENDING_MAIL,
                 Enabled = true
             };
-            timer.Elapsed += OnTimerElapsed;
+            timerSendingMail.Elapsed += OnTimerElapsedSendingMail;
         }
 
-        void OnTimerElapsed(object sender, ElapsedEventArgs e)
+        void OnTimerElapsedSendingMail(object sender, ElapsedEventArgs e)
         {
+            isCallingAPI = true;
             utils.SendingMailUsingMailKit();
         }
 
@@ -63,16 +104,17 @@ namespace WindowsServiceTrackingLocation
 
         void PositionChangedMethod(object sender, GeoPositionChangedEventArgs<GeoCoordinate> e)
         {
-            ParseLocationAsync(e.Position.Location, false);
+            ParseLocationAsync(e.Position.Location);
         }
 
-        void ParseLocationAsync(GeoCoordinate coordinate, bool isCallingAPI)
+        void ParseLocationAsync(GeoCoordinate coordinate)
         {
             if (coordinate.IsUnknown == false)
             {
-                utils.Log($"Latitude {coordinate.Latitude}, Longtitude {coordinate.Longitude}");
+                utils.Log($"Latitude, Longtitude: {coordinate.Latitude}, {coordinate.Longitude}");
                 if (isCallingAPI)
                 {
+                    isCallingAPI = false;
                     GetAllEventDataAsync(coordinate.Latitude, coordinate.Longitude);
                 }
             }
@@ -93,18 +135,31 @@ namespace WindowsServiceTrackingLocation
                 var content = new FormUrlEncodedContent(req);
                 var response = await client.PostAsync("https://neutrinoapi.com/geocode-reverse", content);
                 var responseStr = await response.Content.ReadAsStringAsync();
-                //Console.WriteLine(Lati.ToString() + " " + Longti);
-                //Console.WriteLine(responseStr);
 
-                var result = JsonConvert.DeserializeObject<dynamic>(responseStr);
-                utils.LogAddress(result["address"], result["address-components"]);
-                //Console.WriteLine();
-                //Console.WriteLine("{0}", result["country"]);
-                //Console.WriteLine("{0}", result["country-code"]);
-                //Console.WriteLine("{0}", result["address"]);
-                //Console.WriteLine("{0}", result["city"]);
+                var result = JObject.Parse(responseStr);
+                utils.LogAddress(result["address"].ToString(), result["address-components"].ToString());
             }
         }
 
+        public bool CheckInternetConnection()
+        {
+            try
+            {
+                Ping myPing = new Ping();
+                string host = "google.com";
+                byte[] buffer = new byte[32];
+                int timeout = 1000;
+                PingOptions pingOptions = new PingOptions();
+                PingReply reply = myPing.Send(host, timeout, buffer, pingOptions);
+                if (reply.Status == IPStatus.Success)
+                    return true;
+            }
+            catch (Exception e)
+            {
+                utils.Log("Error when connect internet. " + e.Message);
+                return false;
+            }
+            return false;
+        }
     }
 }

@@ -90,3 +90,179 @@ Affected parameters are:
    logtoconsole = 
    logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
    assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Window Service Tracking Location.
+Warning: The source Window Service Tracking Location is not registered on the local machine.
+Service Window Service Tracking Location is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Window Service Tracking Location.
+Warning: The source Window Service Tracking Location is not registered on the local machine.
+Service Window Service Tracking Location is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Window Service Tracking Location.
+Warning: The source Window Service Tracking Location is not registered on the local machine.
+Service Window Service Tracking Location is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Installing service Window Service Tracking Location...
+Service Window Service Tracking Location has been successfully installed.
+Creating EventLog source Window Service Tracking Location in log Application...
+Committing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Window Service Tracking Location.
+Service Window Service Tracking Location is being removed from the system...
+Service Window Service Tracking Location was successfully removed from the system.
+Installing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Installing service Window Service Tracking Location...
+Service Window Service Tracking Location has been successfully installed.
+Creating EventLog source Window Service Tracking Location in log Application...
+Committing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Window Service Tracking Location.
+Service Window Service Tracking Location is being removed from the system...
+Service Window Service Tracking Location was successfully removed from the system.
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Window Service Tracking Location.
+Warning: The source Window Service Tracking Location is not registered on the local machine.
+Service Window Service Tracking Location is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Window Service Tracking Location.
+Warning: The source Window Service Tracking Location is not registered on the local machine.
+Service Window Service Tracking Location is being removed from the system...
+An exception occurred during the uninstallation of the System.ServiceProcess.ServiceInstaller installer.
+System.ComponentModel.Win32Exception: The specified service does not exist as an installed service
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Installing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Installing service Window Service Tracking Location...
+Service Window Service Tracking Location has been successfully installed.
+Creating EventLog source Window Service Tracking Location in log Application...
+Committing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Installing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Installing service Window Service Tracking Location...
+Creating EventLog source Window Service Tracking Location in log Application...
+Rolling back assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Restoring event log to previous state for source Window Service Tracking Location.
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Window Service Tracking Location.
+Service Window Service Tracking Location is being removed from the system...
+Service Window Service Tracking Location was successfully removed from the system.
+Attempt to stop service Window Service Tracking Location.
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Window Service Tracking Location.
+Warning: The source Window Service Tracking Location is not registered on the local machine.
+Service Window Service Tracking Location is being removed from the system...
+Service Window Service Tracking Location was successfully removed from the system.
+Attempt to stop service Window Service Tracking Location.
+Installing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Installing service Windows Service Tracking Location...
+Service Windows Service Tracking Location has been successfully installed.
+Creating EventLog source Windows Service Tracking Location in log Application...
+Committing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Windows Service Tracking Location.
+Service Windows Service Tracking Location is being removed from the system...
+Service Windows Service Tracking Location was successfully removed from the system.
+Installing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Installing service Windows Service Tracking Location...
+Service Windows Service Tracking Location has been successfully installed.
+Creating EventLog source Windows Service Tracking Location in log Application...
+Committing assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe

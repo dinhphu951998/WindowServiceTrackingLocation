@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,6 +15,7 @@ namespace WindowsServiceTrackingLocation
     public class Utilities
     {
         private string filename = "LocationFile.txt";
+
         public void Log(string msg)
         {
             StreamWriter writer = null;
@@ -32,9 +34,9 @@ namespace WindowsServiceTrackingLocation
             using (writer = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\" + filename
                                             , true))
             {
-                writer.WriteLine("--" + DateTime.Now.ToString());
-                writer.WriteLine($"--address {address}");
-                writer.WriteLine($"--address-components {address_component}");
+                writer.WriteLine(DateTime.Now.ToString());
+                writer.WriteLine($"{address}");
+                writer.WriteLine($"{address_component}");
                 writer.Flush();
             }
         }
@@ -83,7 +85,7 @@ namespace WindowsServiceTrackingLocation
                 var message = new MimeMessage();
                 MailboxAddress from = new MailboxAddress("Location tracking"
                                                     , "WindowServiceTrackingLocation@admin.vn");
-                MailboxAddress to = new MailboxAddress("phundse63159@fpt.edu.vn");
+                MailboxAddress to = new MailboxAddress("dongphan24@gmail.com");
                 message.From.Add(from);
                 message.To.Add(to);
                 message.Subject = "Tracking Location " + DateTime.Now.ToString();
@@ -114,6 +116,7 @@ namespace WindowsServiceTrackingLocation
                 return false;
             }
         }
+
 
     }
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceTrackingLocation", "WindowsServiceTrackingLocation\WindowsServiceTrackingLocation.csproj", "{6EE16F85-FD1C-4124-9615-4F44FF8B3F9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsServiceTrackingLocation.Test", "WindowsServiceTrackingLocation.Test\WindowsServiceTrackingLocation.Test.csproj", "{5A1D1C50-C21B-4E2C-9FC1-24E9A135DE28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6EE16F85-FD1C-4124-9615-4F44FF8B3F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EE16F85-FD1C-4124-9615-4F44FF8B3F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EE16F85-FD1C-4124-9615-4F44FF8B3F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A1D1C50-C21B-4E2C-9FC1-24E9A135DE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1D1C50-C21B-4E2C-9FC1-24E9A135DE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1D1C50-C21B-4E2C-9FC1-24E9A135DE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1D1C50-C21B-4E2C-9FC1-24E9A135DE28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,7 +15,6 @@ E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLoc
 E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\MimeKit.dll
 E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\MailKit.xml
 E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\MimeKit.xml
-E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\obj\Debug\WindowsServiceTrackingLocation.csprojAssemblyReference.cache
 E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe.manifest
 E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.application
 E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\obj\Debug\WindowsServiceTrackingLocation.exe.manifest
