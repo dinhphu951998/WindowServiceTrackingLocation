@@ -1,1 +1,14 @@
-10/10/2018 2:18:42 PM Latitude, Longtitude: 10.854445000146, 106.625236327829
+10/10/2018 9:06:18 PM Exception occurs when STOP: Object reference not set to an instance of an object.
+10/10/2018 10:19:32 PM ----------------Start------------------
+10/10/2018 10:19:39 PM Latitude, Longtitude: 11.2667, 106.6333
+10/10/2018 10:19:41 PM Latitude, Longtitude: 10.9042990017973, 106.751158378074
+10/10/2018 10:20:02 PM -------------------Stop---------------
+10/10/2018 10:20:06 PM Error in sending mail process The given path's format is not supported.
+10/10/2018 10:20:06 PM Exception occurs when STOP: System.NullReferenceException: Object reference not set to an instance of an object.
+   at WindowsServiceTrackingLocation.WindowServiceTrackingLocation.ReleaseResource() in E:\FPTU\PetProject\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\Service1.cs:line 68
+   at WindowsServiceTrackingLocation.WindowServiceTrackingLocation.OnStop() in E:\FPTU\PetProject\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\Service1.cs:line 55
+10/10/2018 10:32:57 PM ----------------Start------------------
+10/10/2018 10:33:04 PM Latitude, Longtitude: 11.2667, 106.6333
+10/10/2018 10:33:05 PM Latitude, Longtitude: 10.9042992265316, 106.751205166693
+10/10/2018 10:33:43 PM Latitude, Longtitude: 10.9042992265316, 106.751205166693
+10/10/2018 10:34:22 PM Latitude, Longtitude: 10.9042992265316, 106.751205166693

@@ -14,13 +14,16 @@ namespace WindowsServiceTrackingLocation
 {
     public class Utilities
     {
-        private string filename = "LocationFile.txt";
+        private string filename = AppDomain.CurrentDomain.BaseDirectory + "\\LocationFile.txt";
 
         public void Log(string msg)
         {
             StreamWriter writer = null;
-            using (writer = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\" + filename
-                                            , true))
+            if (!File.Exists(filename))
+            {
+                File.Create(filename);
+            }
+            using (writer = new StreamWriter(filename, true))
             {
                 writer.WriteLine(DateTime.Now.ToString() + " " + msg);
                 writer.Flush();
@@ -30,9 +33,12 @@ namespace WindowsServiceTrackingLocation
 
         public void LogAddress(string address, string address_component)
         {
+            if (!File.Exists(filename))
+            {
+                File.Create(filename);
+            }
             StreamWriter writer = null;
-            using (writer = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\" + filename
-                                            , true))
+            using (writer = new StreamWriter(filename, true))
             {
                 writer.WriteLine(DateTime.Now.ToString());
                 writer.WriteLine($"{address}");
@@ -85,7 +91,7 @@ namespace WindowsServiceTrackingLocation
             {
                 string content = "";
                 StreamReader reader = null;
-                using (reader = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\" + filename))
+                using (reader = new StreamReader(filename, true))
                 {
                     content = reader.ReadToEnd();
                 }
@@ -122,6 +128,7 @@ namespace WindowsServiceTrackingLocation
                 return false;
             }
         }
+
 
 
     }

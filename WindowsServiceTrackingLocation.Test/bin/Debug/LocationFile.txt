@@ -1,0 +1,17 @@
+10/10/2018 9:21:46 PM Latitude, Longtitude: 10.9042992265316, 106.751205166693
+10/10/2018 9:21:49 PM
+Chợ Xóm Mới, Phạm Hữu Lầu, Di An Ward, Di An Town, Binh Duong province, 824791, Vietnam
+{
+  "country": "Vietnam",
+  "postal-code": "824791",
+  "address": "Chợ Xóm Mới",
+  "town": "Di An Town",
+  "road": "Phạm Hữu Lầu",
+  "suburb": "Di An Ward",
+  "state": "Binh Duong province"
+}
+10/10/2018 9:22:26 PM Latitude, Longtitude: 10.9043199442379, 106.751207825279
+10/10/2018 9:23:05 PM Latitude, Longtitude: 10.9043199442379, 106.751207825279
+10/10/2018 9:23:44 PM Latitude, Longtitude: 10.9042992265316, 106.751205166693
+10/10/2018 9:24:23 PM Latitude, Longtitude: 10.9042992265316, 106.751205166693
+

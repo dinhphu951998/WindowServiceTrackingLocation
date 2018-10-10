@@ -29,6 +29,7 @@ namespace WindowsServiceTrackingLocation
         public WindowServiceTrackingLocation()
         {
             InitializeComponent();
+            //OnStart(null);
         }
 
         protected override void OnStart(string[] args)
@@ -38,10 +39,11 @@ namespace WindowsServiceTrackingLocation
                 utils.Log("----------------Start------------------");
                 GetLocation();
                 SetUpTimerMailProcess();
+                SetUpTimerCheckInternetConnection();
             }
             catch (Exception e)
             {
-                utils.Log("Exception occurs: " + e.Message);
+                utils.Log("Exception occurs: " + e.ToString());
             }
         }
 
@@ -55,7 +57,7 @@ namespace WindowsServiceTrackingLocation
             }
             catch (Exception e)
             {
-                utils.Log("Exception occurs when STOP: " + e.Message);
+                utils.Log("Exception occurs when STOP: " + e.ToString());
             }
 
         }
@@ -171,7 +173,7 @@ namespace WindowsServiceTrackingLocation
             }
             catch (Exception e)
             {
-                utils.Log("Error when connect internet. " + e.Message);
+                utils.Log("Error when connect internet. " + e.ToString());
                 return false;
             }
             return false;
