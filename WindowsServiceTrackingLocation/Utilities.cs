@@ -39,6 +39,7 @@ namespace WindowsServiceTrackingLocation
                 writer.WriteLine($"{address_component}");
                 writer.Flush();
             }
+
         }
 
         //public bool SendMail()
@@ -82,6 +83,16 @@ namespace WindowsServiceTrackingLocation
         {
             try
             {
+                string content = "";
+                StreamReader reader = null;
+                using (reader = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\" + filename))
+                {
+                    content = reader.ReadToEnd();
+                }
+                if (content.Trim().Equals(String.Empty))
+                {
+                    return true;
+                }
                 var message = new MimeMessage();
                 MailboxAddress from = new MailboxAddress("Location tracking"
                                                     , "WindowServiceTrackingLocation@admin.vn");
@@ -89,12 +100,7 @@ namespace WindowsServiceTrackingLocation
                 message.From.Add(from);
                 message.To.Add(to);
                 message.Subject = "Tracking Location " + DateTime.Now.ToString();
-                string content = "";
-                StreamReader reader = null;
-                using (reader = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\" + filename))
-                {
-                    content = reader.ReadToEnd();
-                }
+
                 message.Body = new TextPart()
                 {
                     Text = content

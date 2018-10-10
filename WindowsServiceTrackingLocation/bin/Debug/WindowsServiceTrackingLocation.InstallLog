@@ -266,3 +266,24 @@ Affected parameters are:
    logtoconsole = 
    logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
    assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Uninstalling assembly 'E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PRN292\practice\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Removing EventLog source Windows Service Tracking Location.
+Service Windows Service Tracking Location is being removed from the system...
+Service Windows Service Tracking Location was successfully removed from the system.
+Installing assembly 'E:\FPTU\PetProject\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PetProject\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PetProject\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe
+Installing service Windows Service Tracking Location...
+Service Windows Service Tracking Location has been successfully installed.
+Creating EventLog source Windows Service Tracking Location in log Application...
+Committing assembly 'E:\FPTU\PetProject\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = E:\FPTU\PetProject\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.InstallLog
+   assemblypath = E:\FPTU\PetProject\WindowsServiceTrackingLocation\WindowsServiceTrackingLocation\bin\Debug\WindowsServiceTrackingLocation.exe

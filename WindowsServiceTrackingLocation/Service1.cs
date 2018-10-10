@@ -33,16 +33,31 @@ namespace WindowsServiceTrackingLocation
 
         protected override void OnStart(string[] args)
         {
-            utils.Log("----------------Start------------------");
-            GetLocation();
-            SetUpTimerMailProcess();
+            try
+            {
+                utils.Log("----------------Start------------------");
+                GetLocation();
+                SetUpTimerMailProcess();
+            }
+            catch (Exception e)
+            {
+                utils.Log("Exception occurs: " + e.Message);
+            }
         }
 
         protected override void OnStop()
         {
-            utils.Log("-------------------Stop---------------");
-            utils.SendingMailUsingMailKit();
-            ReleaseResource();
+            try
+            {
+                utils.Log("-------------------Stop---------------");
+                utils.SendingMailUsingMailKit();
+                ReleaseResource();
+            }
+            catch (Exception e)
+            {
+                utils.Log("Exception occurs when STOP: " + e.Message);
+            }
+
         }
 
         void ReleaseResource()
@@ -120,7 +135,7 @@ namespace WindowsServiceTrackingLocation
             }
         }
 
-        async Task GetAllEventDataAsync(double Lati, double Longti) //Get All Events Records  
+        async void GetAllEventDataAsync(double Lati, double Longti) //Get All Events Records  
         {
             using (var client = new HttpClient())
             {
